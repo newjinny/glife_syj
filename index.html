@@ -13,13 +13,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/common.css" />
     <script src="./js/common.js" defer></script>
-
   </head>
   <body>
     <div class="wrap">
+      <a class="scrollToTop" href="#">Top</a>
       <header class="hd">
         <h1>
           <a href="/header_test2.html"
@@ -81,12 +84,18 @@
         </div>
         <button class="ham"><i class="fa-solid fa-bars"></i></button>
       </header>
-      <section class="mainVisual" >
+      <div class="mainVisual">
         <div class="swiper mainSwiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="./img/imgFile_1626681397_0.gif" alt="메인"></div>
-            <div class="swiper-slide"><img src="./img/imgFile_1626681457_0.gif" alt="메인"></div>
-            <div class="swiper-slide"><img src="./img/imgFile_1626681512_0.gif" alt="메일"></div>
+            <div class="swiper-slide">
+              <img src="./img/imgFile_1626681397_0.gif" alt="메인" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/imgFile_1626681457_0.gif" alt="메인" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/imgFile_1626681512_0.gif" alt="메일" />
+            </div>
           </div>
           <div class="imgText">
             <span>경기도 생활문화의 중심</span>
@@ -95,22 +104,104 @@
           </div>
           <div class="swiper-pagination pgNum"></div>
         </div>
-      </section>
-      <section class="menuBar">
-        <ul>
-          <li>우리지역 생활문화공간</li>
-          <li>생활문화 찾기</li>
-          <li>경기상상캠퍼스</li>
-          <li>온라인 문의</li>
-        </ul>
-      </section>
-    </div>
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      </div>
 
-  <!-- Initialize Swiper -->
+      <div class="secBanner">
+        <div class="menuBar">
+          <ul>
+            <li>
+              <a href="#">
+                우리지역 생활문화공간
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                생활문화 찾기
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                경기상상캠퍼스
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                온라인 문의
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="month">
+          <strong>이달의 교육</strong>
+          <p>이달에 운영되는 다양한 교육을 만나보세요.</p>
+          <!-- Swiper -->
+          <div class="swiper monthSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">Slide 5</div>
+              <div class="swiper-slide">Slide 6</div>
+              <div class="swiper-slide">Slide 7</div>
+              <div class="swiper-slide">Slide 8</div>
+              <div class="swiper-slide">Slide 9</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="space">
+        <div class="secHeader">
+          <h2>경기생활문화센터</h2>
+          <h2>공간소개</h2>
+          <p>경기생활문화센터에서 운영하는 공간을 둘러보세요.</p>
+        </div>
+
+        <div class="spaceBtn">
+          <ul>
+            <li><a href="#">책 놀이터</a></li>
+            <li><a href="#">생활 수유실</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">동네부엌</a></li>
+            <li><a href="#">생생 수유실</a></li>
+            <li><a href="#">마주침 공간1</a></li>
+            <li><a href="#">마주침 공간2</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">한뼘전시</a></li>
+            <li><a href="#">무아지경</a></li>
+            <li><a href="#">생생살롱1</a></li>
+            <li><a href="#">생생살롱2</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="secHeader">
+        <h2>우리지역</h2>
+        <h2>생활문화공간을 찾아보세요.</h2>
+        <p>내가 사는 지역 생활문화공간 바로 찾기</p>
+      </div>
+      <div class="secHeader">
+        <h2>경기생활문화센터 SNS</h2>
+        <p>경기생활문화센터와 친구를 맺고</p>
+        <p>다양한 소식을 만나보세요.</p>
+      </div>
+      <div class="secHeader">
+        <h2>새로운 소식</h2>
+      </div>
+      <footer>하단</footer>
+    </div>
+    <!-- Swiper JS .mainSwiper-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper(".mainSwiper", {
+        effect: "fade",
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
@@ -118,6 +209,15 @@
             return '<span class="' + className + '">' + (index + 1) + "</span>";
           },
         },
+      });
+    </script>
+
+    <!-- Initialize Swiper .monthSwiper-->
+    <script>
+      var swiper = new Swiper(".monthSwiper", {
+        slidesPerView: 5,
+        spaceBetween: 30,
+        centeredSlides: true,
       });
     </script>
   </body>
