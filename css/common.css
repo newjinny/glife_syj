@@ -1,0 +1,232 @@
+@charset 'utf-8';
+@import url(./my_reset.css);
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+.notosanskr * { 
+font-family: 'Noto Sans KR', sans-serif;
+}
+/* 
+font-family: "Font Awesome 6 Free";
+font-weight: 900;
+Solid → 900
+Regular, Brands → 400
+Light → 300
+ */
+
+
+ :root {
+  --font-c1: #144AAA;
+  --bg-c1:#F0F4FF
+}
+.wrap {
+  width: 100%;
+}
+.hd {
+  width: calc(100% - 15rem);
+  margin: auto;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Noto Sans KR", sans-serif;
+}
+/* logo */
+.hd h1 {
+  width: 120px;
+  padding: 1rem 0;
+}
+/* nav */
+.hd .gnb {
+  display: flex;
+}
+.gnb .gnb-li {
+  display: flex;
+  height: 100px;
+  padding: 1em 30px;
+  align-items: center;
+}
+.gnb .gnb-li-a {
+  font-family: "GmarketSansMedium";
+  color: var(--font-c1);
+  font-size: 1.3rem;
+  font-weight: bold;
+  transition: all 0.3s;
+  white-space: nowrap;
+}
+.hd .gnb-li:hover .gnb-li-a {
+  color: black;
+}
+.hd .sub {
+  visibility: hidden;
+  position: absolute;
+  top: 100px;
+  z-index: 999;
+  opacity: 0;
+  transition: 0.2s;
+}
+.hd .sub li {
+  margin-top: 25px;
+}
+.hd .sub li a {
+  position: relative;
+  font-size: 1.1rem;
+}
+.hd .sub li:hover a {
+  color: var(--font-c1);
+}
+.hd .sub li a::before {
+  content: "\f111";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 8px;
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  opacity: 0;
+  transform: translateY(-50%);
+  transform: scale(0);
+  transition: transform 0.5s;
+}
+.hd .sub li:hover a::before {
+  opacity: 1;
+  transform: scale(1) translateY(-50%);
+}
+.hd .gnb:hover .sub {
+  display: block;
+}
+.hd .hidden-li-bg {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0px;
+  background-color: var(--bg-c1);
+  transition: all 0.3s;
+  z-index: 99;
+}
+nav:hover .hidden-li-bg {
+  height: 250px;
+}
+nav:hover .sub {
+  opacity: 1;
+  visibility: visible;
+}
+
+ /* util */
+.util-list {
+  display: flex;
+  gap: 10px;
+}
+.util-list a {
+  height: 20px;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: var(--font-c1);
+  font-size: 0.8rem;
+  margin-top: 12px;
+  white-space: nowrap;
+}
+.util-list i {
+  padding-right: 5px;
+}
+.util-list a:hover {
+  border-bottom: 1px solid var(--font-c1);
+}
+
+/* ham */
+.ham {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  display: none;
+  color: var(--font-c1);
+
+}
+.ham:hover,
+.ham:focus {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+/* mainvisual */
+.mainVisual {
+  border: 1px solid red;
+  width: calc(100% - 15rem);
+  margin: auto;
+  padding: 1rem 0rem;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagination-bullet {
+  height: 20px;
+  font-size: 16px;
+  color: #000;
+  opacity: 1;
+  background: transparent;
+}
+.mainVisual .imgText {
+  display: block;
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  top: 20%;
+  white-space: nowrap;
+  font-family: "GmarketSansMedium";
+  color: var(--font-c1);
+}
+.mainVisual .imgText span{
+font-size: 1.8rem;
+line-height: 4;
+
+}
+.mainVisual .imgText h2{
+  font-size: 3.7rem;
+  line-height: 1;
+}
+
+.swiper-pagination-bullet-active {
+  color:var(--font-c1)
+}
+.menuBar{
+ width: calc(100% - 15rem);
+ height: 50px;
+ margin: auto;
+ border: 1px solid green;
+}
+.menuBar ul{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+.menuBar ul li{
+ padding: 1;
+}
+
+@media (max-width: 1100px) {
+  .hd .gnb,
+  .hd .util-list {
+    display: none;
+  }
+  .ham {
+    display: block;
+  }
+  .gnb {
+    display: none;
+  }
+}
