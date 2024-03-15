@@ -18,12 +18,13 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="./css/common.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/common.js" defer></script>
   </head>
   <body>
     <div class="wrap">
       <a class="scrollToTop" href="#">Top</a>
-      <header class="hd">
+      <header class="hd mw">
         <h1>
           <a href="/header_test2.html"
             ><img src="./img/main-logo.svg" alt="로고"
@@ -84,7 +85,7 @@
         </div>
         <button class="ham"><i class="fa-solid fa-bars"></i></button>
       </header>
-      <div class="mainVisual">
+      <section class="mainVisual mw">
         <div class="swiper mainSwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -98,63 +99,268 @@
             </div>
           </div>
           <div class="imgText">
-            <span>경기도 생활문화의 중심</span>
+            <span>경기도 생활문화의 중심</span><br />
             <h2>일상에 문화를</h2>
             <h2>물들이다</h2>
           </div>
           <div class="swiper-pagination pgNum"></div>
         </div>
-      </div>
-
-      <div class="secBanner">
-        <div class="menuBar">
-          <ul>
-            <li>
-              <a href="#">
-                우리지역 생활문화공간
-                <i class="fa-solid fa-arrow-right"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                생활문화 찾기
-                <i class="fa-solid fa-arrow-right"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                경기상상캠퍼스
-                <i class="fa-solid fa-arrow-right"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                온라인 문의
-                <i class="fa-solid fa-arrow-right"></i>
-              </a>
-            </li>
-          </ul>
+      </section>
+      <section class="eduMonth">
+        <div class="inner">
+          <div class="secHeader">
+            <nav class="quick">
+              <ul>
+                <li>
+                  <a href="#">
+                    우리지역 생활문화공간
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    생활문화 찾기
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    경기상상캠퍼스
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    온라인 문의
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <h2>이 달의 교육</h2>
+            <br />
+            <span>이달에 운영되는 다양한 교육을 만나보세요.</span>
+          </div>
+          <div class="calendarArea mw">
+            <div class="year">
+              <i class="fa-solid fa-chevron-left"></i>
+              <div>
+                <strong>06</strong>
+                <span>2021</span>
+              </div>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <ul class="day">
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+              <li>6</li>
+              <li class="on">7</li>
+              <li>8</li>
+              <li>9</li>
+              <li>10</li>
+              <li>11</li>
+              <li>12</li>
+              <li>13</li>
+              <li>14</li>
+              <li>15</li>
+              <li>16</li>
+              <li>17</li>
+              <li>18</li>
+              <li>19</li>
+              <li>20</li>
+              <li>21</li>
+              <li>22</li>
+              <li>23</li>
+              <li>24</li>
+              <li>25</li>
+              <li>26</li>
+              <li>27</li>
+              <li>28</li>
+              <li>29</li>
+              <li>30</li>
+            </ul>
+            <a href="#" class="more">
+              더보기 <i class="fa-solid fa-plus"></i>
+            </a>
+          </div>
         </div>
-        <div class="month">
-          <strong>이달의 교육</strong>
-          <p>이달에 운영되는 다양한 교육을 만나보세요.</p>
-          <!-- Swiper -->
-          <div class="swiper monthSwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">Slide 1</div>
-              <div class="swiper-slide">Slide 2</div>
-              <div class="swiper-slide">Slide 3</div>
-              <div class="swiper-slide">Slide 4</div>
-              <div class="swiper-slide">Slide 5</div>
-              <div class="swiper-slide">Slide 6</div>
-              <div class="swiper-slide">Slide 7</div>
-              <div class="swiper-slide">Slide 8</div>
-              <div class="swiper-slide">Slide 9</div>
+        <div class="swiper monthSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <figure class="card">
+                <div class="imgWrap">
+                  <img src="./img/space_01.png" alt="카드1" />
+                  <figcaption class="desc">
+                    <span>하남1</span>
+                    <strong>벨칸토성학 동호회</strong>
+                    <span
+                      ><i class="fa-solid fa-location-dot"></i> 하남 문회회관
+                      연습실</span
+                    >
+                    <time>
+                      <i class="fa-regular fa-calendar"></i>
+                      2024. 01. 01
+                    </time>
+                  </figcaption>
+                </div>
+                <p class="info">
+                  <span>#교육</span>
+                  <time>2024. 01. 01</time><br />
+                  <strong>행복한 합창단</strong>
+                </p>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure class="card">
+                <div class="imgWrap">
+                  <img src="./img/space_02.png" alt="카드1" />
+                  <figcaption class="desc">
+                    <span>하남2</span>
+                    <strong>벨칸토성학 동호회</strong>
+                    <span
+                      ><i class="fa-solid fa-location-dot"></i> 하남 문회회관
+                      연습실</span
+                    >
+                    <time>
+                      <i class="fa-regular fa-calendar"></i>
+                      2024. 01. 01
+                    </time>
+                  </figcaption>
+                </div>
+                <p class="info">
+                  <span>#교육</span>
+                  <time>2024. 01. 01</time><br />
+                  <strong>행복한 합창단</strong>
+                </p>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure class="card">
+                <div class="imgWrap">
+                  <img src="./img/space_03.png" alt="카드1" />
+                  <figcaption class="desc">
+                    <span>하남3</span>
+                    <strong>벨칸토성학 동호회</strong>
+                    <span
+                      ><i class="fa-solid fa-location-dot"></i> 하남 문회회관
+                      연습실</span
+                    >
+                    <time>
+                      <i class="fa-regular fa-calendar"></i>
+                      2024. 01. 01
+                    </time>
+                  </figcaption>
+                </div>
+                <p class="info">
+                  <span>#교육</span>
+                  <time>2024. 01. 01</time><br />
+                  <strong>행복한 합창단</strong>
+                </p>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure class="card">
+                <div class="imgWrap">
+                  <img src="./img/space_04.png" alt="카드1" />
+                  <figcaption class="desc">
+                    <span>하남4</span>
+                    <strong>벨칸토성학 동호회</strong>
+                    <span>
+                      <i class="fa-solid fa-location-dot"></i>
+                      하남 문회회관 연습실
+                    </span>
+                    <time>
+                      <i class="fa-regular fa-calendar"></i>
+                      2024. 01. 01
+                    </time>
+                  </figcaption>
+                </div>
+                <p class="info">
+                  <span>#교육</span>
+                  <time>2024. 01. 01</time><br />
+                  <strong>행복한 합창단</strong>
+                </p>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure class="card">
+                <div class="imgWrap">
+                  <img src="./img/space_05.png" alt="카드1" />
+                  <figcaption class="desc">
+                    <span>하남5</span>
+                    <strong>벨칸토성학 동호회</strong>
+                    <span>
+                      <i class="fa-solid fa-location-dot"></i>
+                      하남 문회회관 연습실
+                    </span>
+                    <time>
+                      <i class="fa-regular fa-calendar"></i>
+                      2024. 01. 01
+                    </time>
+                  </figcaption>
+                </div>
+                <p class="info">
+                  <span>#교육</span>
+                  <time>2024. 01. 01</time><br />
+                  <strong>행복한 합창단</strong>
+                </p>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure class="card">
+                <div class="imgWrap">
+                  <img src="./img/space_06.png" alt="카드1" />
+                  <figcaption class="desc">
+                    <span>하남6</span>
+                    <strong>벨칸토성학 동호회</strong>
+                    <span>
+                      <i class="fa-solid fa-location-dot"></i>
+                      하남 문회회관 연습실
+                    </span>
+                    <time>
+                      <i class="fa-regular fa-calendar"></i>
+                      2024. 01. 01
+                    </time>
+                  </figcaption>
+                </div>
+                <p class="info">
+                  <span>#교육</span>
+                  <time>2024. 01. 01</time><br />
+                  <strong>행복한 합창단</strong>
+                </p>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure class="card">
+                <div class="imgWrap">
+                  <img src="./img/space_07.png" alt="카드1" />
+                  <figcaption class="desc">
+                    <span>하남7</span>
+                    <strong>벨칸토성학 동호회</strong>
+                    <span>
+                      <i class="fa-solid fa-location-dot"></i>
+                      하남 문회회관 연습실
+                    </span>
+                    <time>
+                      <i class="fa-regular fa-calendar"></i>
+                      2024. 01. 01
+                    </time>
+                  </figcaption>
+                </div>
+                <p class="info">
+                  <span>#교육</span>
+                  <time>2024. 01. 01</time><br />
+                  <strong>행복한 합창단</strong>
+                </p>
+              </figure>
             </div>
           </div>
         </div>
-      </div>
-      <div class="space">
+      </section>
+      <section class="space">
         <div class="secHeader">
           <h2>경기생활문화센터</h2>
           <h2>공간소개</h2>
@@ -179,46 +385,27 @@
             <li><a href="#">생생살롱2</a></li>
           </ul>
         </div>
-      </div>
-      <div class="secHeader">
-        <h2>우리지역</h2>
-        <h2>생활문화공간을 찾아보세요.</h2>
-        <p>내가 사는 지역 생활문화공간 바로 찾기</p>
-      </div>
-      <div class="secHeader">
-        <h2>경기생활문화센터 SNS</h2>
-        <p>경기생활문화센터와 친구를 맺고</p>
-        <p>다양한 소식을 만나보세요.</p>
-      </div>
-      <div class="secHeader">
-        <h2>새로운 소식</h2>
-      </div>
+      </section>
+      <section class="ourCenter">
+        <div class="secHeader">
+          <h2>우리지역</h2>
+          <h2>생활문화공간을 찾아보세요.</h2>
+          <p>내가 사는 지역 생활문화공간 바로 찾기</p>
+        </div>
+      </section>
+      <section class="snsList">
+        <div class="secHeader">
+          <h2>경기생활문화센터 SNS</h2>
+          <p>경기생활문화센터와 친구를 맺고</p>
+          <p>다양한 소식을 만나보세요.</p>
+        </div>
+      </section>
+      <section class="news">
+        <div class="secHeader">
+          <h2>새로운 소식</h2>
+        </div>
+      </section>
       <footer>하단</footer>
     </div>
-    <!-- Swiper JS .mainSwiper-->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mainSwiper", {
-        effect: "fade",
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-          renderBullet: function (index, className) {
-            return '<span class="' + className + '">' + (index + 1) + "</span>";
-          },
-        },
-      });
-    </script>
-
-    <!-- Initialize Swiper .monthSwiper-->
-    <script>
-      var swiper = new Swiper(".monthSwiper", {
-        slidesPerView: 5,
-        spaceBetween: 30,
-        centeredSlides: true,
-      });
-    </script>
   </body>
 </html>
